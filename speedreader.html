@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+Vikram Sringari
+4/23/2016
+CSE 154 AC
+HW3: SpeedReader
+This HTML file structures the SpeedReader webpage to speedread text.
+It includes a increasing size options, speed options and start and stop buttons.
+It inputs the text from the typable textbox below and outputs the text above.
+-->
+<html>
+	<head>
+		<title>SpeedReader</title>
+		<link href="speedreader.css" type="text/css" rel="stylesheet" />
+		<script src="speedreader.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+		<h1>SpeedReader</h1>
+		
+		<div id="output"></div><!--outputs text-->
+		
+			<div class="controls"><!--controls for text reading-->
+			
+				<fieldset><!--starts and stops reading-->
+					<legend>Play Controls:</legend>
+					<button id="start" >Start</button>
+					<button id="stop" >Stop</button>
+				</fieldset>
+				
+				<fieldset><!--increases/decreases text reading-->
+					<legend>Speed:</legend>
+					<select id="wpm" > 
+						<option value = "500">50 wpm</option>
+						<option value = "200">300 wpm</option>
+						<option value = "171" selected="selected">350 wpm</option>
+						<option value = "150">400 wpm</option>
+						<option value = "133">450 wpm</option>
+						<option value = "120">500 wpm</option>
+					</select>				
+				</fieldset>
+				
+				<fieldset><!--increases/decreases text size-->
+					<legend>Size:</legend>
+					<label><input type="radio" name="size" id="medium" value = "36pt" checked="checked" /> Medium</label>
+					<label><input type="radio" name="size" id="big" value = "48pt" /> Big</label>
+					<label><input type="radio" name="size" id="bigger" value = "60pt" /> Bigger</label>
+				</fieldset>
+			</div>
+			
+		<fieldset id="input"><!--outputs text-->
+			<legend>Input Text</legend>
+			<textarea id="inputText" rows="10" cols="80"></textarea>
+		</fieldset>
+		
+		<div id="htmlcss"><!--validators-->
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/images/w3c-html-blue.png" alt="Valid HTML5" /></a>
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/images/w3c-css-blue.png" alt="Valid CSS" /></a>
+			<a href="https://webster.cs.washington.edu/jslint/?referer"><img src="https://webster.cs.washington.edu/images/w3c-js-blue.png" alt="Valid JS Lint" /></a>
+		</div>
+		
+	</body>
+</html>

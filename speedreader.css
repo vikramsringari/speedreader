@@ -1,0 +1,76 @@
+/*
+Vikram Sringari
+4/23/2016
+CSE 154 AC
+HW3: SpeedReader
+This CSS file styles the the SpeedReader webpage to speedread text.
+It styles size options, speed options and start and stop buttons.
+It also styles the typeable textbox and above outputer, aswell as the background.
+*/
+body{
+	background-color: #EAF6F6;
+	font-family: Garamond;
+	font-size: 12pt;
+}
+
+body, div.controls, #input{
+	text-align: center;
+}
+button{
+	background-color: white;
+	border-style: solid;
+}
+button:disabled{
+	background-color: lightgray;
+}
+button, #htmlcss img{
+	width: 70px;
+}
+button, textarea{
+	border-color: gray;
+	border-width: 1px;
+}
+fieldset{
+	border-style: none;
+	display: inline;
+	vertical-align: top;
+}
+#htmlcss{
+	bottom: 0px;
+	left: 5px;
+	position: absolute;
+}
+#input{
+	clear: both;
+}
+legend{
+	border-bottom: 1px solid; 
+	border-color: #8EBEBE;
+	padding: 2px; 
+    text-align: left; 
+    width: 100%; 
+}
+legend, #output{
+	font-weight: bold;
+}
+#output{
+	border: 2px solid #8EBEBE; /*border only apears in this format other wise invisible*/
+	border-radius: 5px;
+	font-family: monospace;
+	font-size: 36pt;
+	height: 100px;
+	line-height: 100px;
+	margin:0 auto;
+	vertical-align: bottom;
+	width: 80%;
+}
+#output, textarea:disabled{
+	background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
